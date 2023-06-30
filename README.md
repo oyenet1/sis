@@ -1,8 +1,8 @@
-# DOCUMENTATION OF MEERAS SCHOOL MANAGEMENT SYSTEM
+# DOCUMENTATION OF SCHOOL MANAGEMENT SYSTEM
 
 ## INTRODUCTION
 
-Meeras School Management System is an information management system for managing student data in educational institutions. It facilitates teachers' access to student data and lightens their workload. Information about students such as their exam grades, parent information, tuition fees etc, is contained in student database in the school management system.
+School Management System is an information management system for managing student data in educational institutions. It facilitates teachers' access to student data and lightens their workload. Information about students such as their exam grades, parent information, tuition fees etc, is contained in student database in the school management system.
 
 Student registration, class materials, grades, analytical grades for students, and other assessment components are all provided by this system. This document is to show the reader on how to navigate the application and get the best out of the application in general.
 
