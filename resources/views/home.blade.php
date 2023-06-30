@@ -1,0 +1,25 @@
+@extends('layouts.dashboard')
+@section('content')
+	{{-- display admin and supersadmin roles --}}
+	@if (in_array(currentUserFirstRole(), ['superadministrator', 'admin']))
+		@include('dashboard.admin')
+	@elseif(currentUser()->hasRole(['founder', 'president', 'hos']))
+		@livewire('hos-potal')
+	@elseif(currentUser()->hasRole(['accountant']))
+		@include('dashboard.accountant')
+	@elseif(currentUser()->hasRole(['teacher']))
+		@include('dashboard.teacher')
+	@elseif(currentUser()->hasRole(['class teacher']))
+		@include('dashboard.class_teacher')
+	@elseif(currentUser()->hasRole(['nurse']))
+		@include('dashboard.nurse')
+	@elseif(currentUser()->hasRole(['parent']))
+		@include('dashboard.parent')
+	@elseif(currentUser()->hasRole(['exam officer']))
+		@include('dashboard.officer')
+	@elseif(currentUser()->hasRole(['hod']))
+		@include('dashboard.hod')
+	@else
+		@include('dashboard.stu')
+	@endif
+@endsection

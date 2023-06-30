@@ -1,0 +1,1 @@
+@livewire('profiles.student-profile')

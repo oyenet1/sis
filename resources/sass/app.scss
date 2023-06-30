@@ -1,0 +1,150 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+// fonts from google fira span
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// // Font-Awesome
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+// @import "~@fortawesome/fontawesome-free/scss/regular";
+// @import "~@fortawesome/fontawesome-free/scss/solid";
+// @import "~@fortawesome/fontawesome-free/scss/brands";
+
+.max-700 {
+    max-width: 500px !important;
+}
+
+// classes for affective trait and psychomotor
+.t-1{
+    width: 5%;
+}
+.t-2{
+    width: 27%;
+}
+.t-3{
+    width: 50%;
+}
+.t-4{
+    width: 75%;
+}
+.t-5{
+    width: 100%;
+}
+
+body {
+    font-family: fira;
+}
+.alert-info {
+    color: rgb(59, 136, 246) !important;
+    border-color: rgb(37, 99, 235) !important;
+}
+.alert-success {
+    color: rgb(34, 196, 96) !important;
+    border-color: rgb(22, 163, 74) !important;
+}
+.alert-danger {
+    color: rgb(220, 38, 38) !important;
+    border-color: rgb(220, 38, 38) !important;
+}
+.alert-error {
+    color: rgb(220, 38, 38) !important;
+    border-color: rgb(220, 38, 38) !important;
+}
+.alert-warning {
+    color: rgb(202, 138, 4) !important;
+    border-color: rgb(237, 138, 8) !important;
+}
+
+.dropdown::before {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    border: 10px solid white;
+    box-shadow: 0;
+    rotate: 45deg;
+    margin: -12px;
+    margin-right: 4px !important;
+    right: 20%;
+}
+
+.income {
+    background-image: linear-gradient(to right, #ebffed, #b5ff7a);
+}
+.expenses {
+    background-image: linear-gradient(to right, #ffc5c5, #ffe1c5);
+}
+
+@layer components {
+    .input,
+    input {
+        @apply bg-slate-400;
+    }
+
+    .alert-success {
+        @apply text-green-500 border-green-600;
+    }
+    .alert-error {
+        @apply text-red-500 border-red-600;
+    }
+    label {
+        @apply text-gray-500;
+    }
+    a.active:active,
+    a.active {
+        @apply text-primary  bg-primary-light border-l-4 font-medium;
+    }
+    li.active-parent {
+        @apply bg-primary-light border-l-4 font-medium border-primary;
+    }
+    a.active-children {
+        @apply text-primary pl-20 font-medium;
+    }
+    .btn {
+        @apply border rounded-lg px-4 py-2 font-medium;
+    }
+
+    .btn-sm {
+        @apply border rounded-lg px-2 py-1 text-sm font-medium;
+    }
+
+    .btn-lg {
+        @apply border rounded-lg px-8 py-4 text-xl font-medium;
+    }
+
+    .submit,
+    .submit-primary {
+        @apply btn;
+    }
+
+    .btn-primary,
+    .submit-primary {
+        @apply text-white bg-primary border-primary;
+    }
+    .btn-primary:hover {
+        @apply text-primary bg-white font-medium;
+    }
+    .btn-secondary,
+    .submit-secondary {
+        @apply text-white bg-secondary border-secondary;
+    }
+    .btn-secondary:hover {
+        @apply text-secondary bg-white font-medium;
+    }
+    .btn-primary-outline {
+        @apply text-primary bg-white border-primary;
+    }
+    .btn-primary-outline:hover {
+        @apply text-white bg-primary font-medium;
+    }
+    .btn-secondary-outline {
+        @apply text-secondary bg-white border-secondary;
+    }
+    .btn-secondary-outline:hover {
+        @apply text-white bg-secondary;
+    }
+
+    .tt {
+        @apply transition transform duration-500;
+    }
+}
